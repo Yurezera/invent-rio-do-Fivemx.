@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <Title>inv</Title>
+        <link rel="stylesheet" href="singleinventorymenu.css">
+    </head>
+    <body>
+        <div id="main">
+            <div id="armor-wrapper">
+                <div id="armor-div">
+                    <div id="armor-slot1" class="armor-slot">
+                        <div id="number1-wrapper" class="number-wrapper">
+                            <h2 id="number1" class="number">1</h2>
+                        </div>
+                        <div class="weapon-wrapper">
+                            <div class="weapon-img-wrapper">
+                                <img src="" alt="weapon img" class="weapon-img">
+                            </div>
+                            <h3 class="ammo-amount"></h3>
+                            <li class="data" data-Weapon_name="" style="display: none;"></li>
+                        </div>
+                    </div>
+                    <div id="armor-slot2" class="armor-slot">
+                        <div id="number1-wrapper" class="number-wrapper">
+                            <h2 id="number1" class="number">2</h2>
+                        </div>
+                        <div class="weapon-wrapper">
+                            <div class="weapon-img-wrapper">
+                                <img src="" alt="weapon img" class="weapon-img">
+                            </div>
+                            <h3 class="ammo-amount"></h3>
+                            <li class="data" data-Weapon_name="" style="display: none;"></li>
+                        </div>
+                    </div>
+                    <div id="armor-slot3" class="armor-slot">
+                        <div id="number1-wrapper" class="number-wrapper">
+                            <h2 id="number1" class="number">3</h2>
+                        </div>
+                        <div class="weapon-wrapper">
+                            <div class="weapon-img-wrapper">
+                                <img src="" alt="weapon img" class="weapon-img">
+                            </div>
+                            <h3 class="ammo-amount"></h3>
+                            <li class="data" data-Weapon_name="" style="display: none;"></li>
+                        </div>
+                    </div>
+                    <div id="unequip" class="unequip-slot">
+                        <div class="unequip-div">
+                            <h2 class="unequip-text">Desequipar</h2>
+                        </div>
+                    </div>
+                    <div id="unequip-all" class="unequip-slot">
+                        <div class="unequip-div">
+                            <h2 class="unequip-text">Desequipar Tudo</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            
+            <div id="content-main">
+                <div id="top-sector">
+                    <div id="top-content-div">
+                        <img id="q-icon" src="https://yt3.ggpht.com/idJBSiwvAaH5guKcJu8lZvMKANTMLE8gCtvJYhWGFbYxFuT0biqzh47rnW6z87WxVbHdYMCoLo8=s108-c-k-c0x00ffffff-no-rj" alt="quaralho icon">
+                        <div id="amount-div">
+                            <input type="number" id="amount-inp" placeholder="Quantidade">
+                        </div>
+                        <div id="usar-div" class="client-choices">
+                            <div id="usar-wrapper" class="ins-wrapper1">
+                                <h2 class="ins-text">Usar</h2>
+                            </div>
+                        </div>
+                        <div id="enviar-div" class="client-choices">
+                            <div id="enviar-wrapper" class="ins-wrapper1">
+                                <h2 class="ins-text">Enviar</h2>
+                            </div>
+                        </div>
+                        <div id="dropar-div" class="client-choices">
+                            <div id="dropar-wrapper" class="ins-wrapper1">
+                                <h2 class="ins-text">Dropar</h2>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div id="middle-wrapper">
+                    <div id="middle-sector">
+                        <div id="row1" class="row">
+                            <div class="classinv-slot"></div>
+                            <div class="classinv-slot"></div>
+                            <div class="classinv-slot"></div>
+                            <div class="classinv-slot"></div>
+                        </div>
+                        <div id="row2" class="row">
+                            <div class="classinv-slot"></div>
+                            <div class="classinv-slot"></div>
+                            <div class="classinv-slot"></div>
+                            <div class="classinv-slot"></div>
+                        </div>
+                        <div id="row3" class="row">
+                            <div class="classinv-slot"></div>
+                            <div class="classinv-slot"></div>
+                            <div class="classinv-slot"></div>
+                            <div class="classinv-slot"></div>
+                        </div>
+                        <div id="row4" class="row">
+                            <div class="classinv-slot"></div>
+                            <div class="classinv-slot"></div>
+                            <div class="classinv-slot"></div>
+                            <div class="classinv-slot"></div>
+                        </div>
+                        <div id="row5" class="row">
+                            <div class="classinv-slot"></div>
+                            <div class="classinv-slot"></div>
+                            <div class="classinv-slot"></div>
+                            <div class="classinv-slot"></div>
+                        </div>
+                    </div>
+                </div>    
+                <div id="bottom-sector">
+                    <div id="mochila">
+                        <h1 style="margin: 0; font-family: 'Segoe UI Variable Display', 'Segoe UI', segoeui, 'Helvetica Neue', helvetica, arial, sans-serif;">Mochila</h1>
+                        <p style="margin: 0; font-family: 'Segoe UI Variable Display', 'Segoe UI', segoeui, 'Helvetica Neue', helvetica, arial, sans-serif;">Organize e distribua seus itens aqui!</p>
+                    </div>
+                    <div id="weight-div">
+                        <div id="wrapper-1">
+                            <h2 id="peso-text">Peso</h2>
+                            <h3 id="peso-amount">0 <span id="span">/ 0</span></h3>
+                        </div>
+                        <div id="wrapper-2">
+                            <img id="weight-icon" src="https://images.vexels.com/media/users/3/153197/isolated/preview/bf17f2f339de5118035513c3606b5735-icone-de-peso-kettlebell.png" alt="weight icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="singleinventorymenu.js"></script>
+    </body>
+</html>
