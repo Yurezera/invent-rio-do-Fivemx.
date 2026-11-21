@@ -3,8 +3,23 @@ body{
     width: 100vw;
     height: 100vh;
     padding: 0;
-    background: linear-gradient(135deg, rgba(0,0,0,0.55), rgba(0,0,0,0.8));
+    background: linear-gradient(315deg in oklch, oklch(76.53% 0.1575 52.90) 0.0%, oklch(76.08% 0.1574 50.12) 3.2%, oklch(75.47% 0.1580 46.36) 6.5%, oklch(74.74% 0.1595 41.86) 9.7%, oklch(73.93% 0.1624 36.90) 12.9%, oklch(73.08% 0.1667 31.73) 16.1%, oklch(72.23% 0.1725 26.61) 19.4%, oklch(71.37% 0.1790 21.48) 22.6%, oklch(70.47% 0.1875 15.90) 25.8%, oklch(69.52% 0.1971 10.08) 29.0%, oklch(68.55% 0.2070 4.26) 32.3%, oklch(67.58% 0.2159 358.67) 35.5%, oklch(66.62% 0.2231 353.52) 38.7%, oklch(65.71% 0.2277 349.07) 41.9%, oklch(64.88% 0.2310 345.36) 45.2%, oklch(64.09% 0.2332 342.10) 48.4%, oklch(63.26% 0.2342 338.97) 51.6%, oklch(62.35% 0.2339 335.66) 54.8%, oklch(61.28% 0.2323 331.84) 58.1%, oklch(59.97% 0.2293 327.23) 61.3%, oklch(58.26% 0.2237 321.83) 64.5%, oklch(56.28% 0.2161 315.90) 67.7%, oklch(54.25% 0.2076 309.70) 71.0%, oklch(52.37% 0.1993 303.51) 74.2%, oklch(50.87% 0.1922 297.60) 77.4%, oklch(49.93% 0.1873 292.21) 80.6%, oklch(49.62% 0.1844 286.89) 83.9%, oklch(49.77% 0.1828 281.55) 87.1%, oklch(50.21% 0.1820 276.44) 90.3%, oklch(50.76% 0.1818 271.84) 93.5%, oklch(51.27% 0.1817 267.98) 96.8%, oklch(51.56% 0.1814 265.12) 100.0%);
     user-select: none;
+}
+
+#gtavi_main{
+    margin: 0;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 150px;
+    height: 111px;
+}
+
+#gtavi{
+    width: 150px;
+    height: 111px;
+    object-fit: cover;
 }
 
 h2, h3{
@@ -27,8 +42,10 @@ h1, p{
 
 #main{
     position: absolute;
-    width: 65%;
-    height: 90%;
+    width: 62%;
+    aspect-ratio: 2/2;
+    max-width: 100vw;
+    max-height: 95vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -90,6 +107,7 @@ h1, p{
 }
 
 .unequip-div{
+    transition: 0.2s;
     position: absolute;
     width: 80%;
     height: 80%;
@@ -111,6 +129,7 @@ h1, p{
     transform: translate(-50%, -50%);
     margin: 0;
     text-align: center;
+    pointer-events: none;
 }
 
 .number-wrapper{
@@ -122,6 +141,7 @@ h1, p{
     border-radius: 50%;
     position: absolute;
     pointer-events: none;
+    z-index: 3;
 }
 
 .number{
@@ -165,8 +185,7 @@ h1, p{
 }
 
 #q-icon{
-    width: 90px;
-    height: 90px;
+    height: 100%;
     object-fit: cover;
     margin-left: 20px;
     border-radius: 50%;
@@ -195,7 +214,7 @@ h1, p{
     outline: none;
     border: none;
     background: rgba(0,0,0,0.3);
-    padding: 12.5px;
+    padding: 8%;
     border-radius: 10px;
     width: 100%;
     color: aliceblue;
@@ -232,7 +251,7 @@ h1, p{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 10%;
+    padding: 7%;
     background: rgba(0,0,0,0.4);
     border-radius: 8px;
     text-align: center;
@@ -351,11 +370,13 @@ h1, p{
     width: 100%;
     height: 100%;
     user-select: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .item-name{
     pointer-events: none;
-    margin-top: 5px;
+    margin-top: 2.5px;
     text-align: center;
     height: 15%;
 }
@@ -366,9 +387,11 @@ h1, p{
     align-items: center;
     justify-content: center;
     height: 70%;
+    width: 100%;
 }
 
 .item-amount{
+    margin-top: auto;
     text-align: center;
     height: 15%;
     pointer-events: none;
@@ -376,9 +399,9 @@ h1, p{
 
 .item-img{
     max-height: 100%;
+    max-width: 96%;
     border-radius: 5px;
     object-fit: cover;
-    width: 80%;
     display: none;
     pointer-events: none;
     user-select: none;
@@ -424,6 +447,27 @@ h1, p{
     pointer-events: none;
     user-select: none;
     -webkit-user-drag: none;
+}
+
+.ins-text{
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.ins-text:hover{
+    box-shadow: 0 0 5px white;
+}
+
+.unequip-div{
+    cursor: pointer;
+}
+
+.unequip-div:hover{
+    box-shadow: 0 0 5px white;
+}
+
+.filled-inv > .global-inv-div{
+    cursor: pointer;
 }
 
 /*.armor-slot:hover{
