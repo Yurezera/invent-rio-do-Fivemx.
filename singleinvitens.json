@@ -1,302 +1,431 @@
 {
     "itens": {
         "armas": {
-            "Ball": {"hash": "WEAPON_BALL", "name": "BOLA", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_BALL.png"},
-            "M107": {"hash": "WEAPON_HEAVYSNIPER", "name": "Barrett M107", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_HEAVYSNIPER.png"},
-            "AWM": {"hash": "WEAPON_SNIPERRIFLE", "name": "AWM L96A1", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_SNIPERRIFLE.png"},
-            "UTS-15": {"hash": "WEAPON_ASSAULTSHOTGUN", "name": "UTAS UTS-15", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_ASSAULTSHOTGUN.png"},
-            "870": {"hash": "WEAPON_PUMPSHOTGUN_MK2", "name": "Remington 870 Custom", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_PUMPSHOTGUN_MK2.png"},
-            "SPAS": {"hash": "WEAPON_COMBATSHOTGUN", "name": "Franchi SPAS-12", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_COMBATSHOTGUN.png"},
-            "PEM": {"hash": "WEAPON_EMPLAUNCHER", "name": "PEM Launcher", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_EMPLAUNCHER.png"},
-            "RPG": {"hash": "WEAPON_RPG", "name": "RPG-7", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_RPG.png"},
-            "Railgun": {"hash": "WEAPON_RAILGUN", "name": "Railgun", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_RAILGUN.png"},
-            "Stinger": {"hash": "WEAPON_HOMINGLAUNCHER", "name": "FIM-92 Stinger", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_HOMINGLAUNCHER.png"},
-            "MGL": {"hash": "WEAPON_GRENADELAUNCHER", "name": "NUPROL MGL 40mm", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_GRENADELAUNCHER.png"},
-            "Minigun": {"hash": "WEAPON_MINIGUN", "name": "M134 Minigun", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_MINIGUN.png"},
-            "P227": {"hash": "WEAPON_PISTOL", "name": "Sig Sauer P227",  "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_PISTOL.png"},
-            "Vintage Pistol" : {"hash": "WEAPON_VINTAGEPISTOL", "name": "Pistola Vintage",  "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_VINTAGEPISTOL.png"},
+            "Ball": {"hash": "WEAPON_BALL", "name": "BOLA", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_BALL.png", "ammo_type": "self", "stack_limit": "10"},
+            "M107": {"hash": "WEAPON_HEAVYSNIPER", "name": "Barrett M107", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_HEAVYSNIPER.png", "ammo_type": ".50_BMG", "stack_limit": "5"},
+            "AWM": {"hash": "WEAPON_SNIPERRIFLE", "name": "AWM L96A1", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_SNIPERRIFLE.png", "ammo_type": ".762_NATO", "stack_limit": "5"},
+            "UTS-15": {"hash": "WEAPON_ASSAULTSHOTGUN", "name": "UTAS UTS-15", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_ASSAULTSHOTGUN.png", "ammo_type": ".12", "stack_limit": "5"},
+            "870": {"hash": "WEAPON_PUMPSHOTGUN_MK2", "name": "Remington 870 Custom", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_PUMPSHOTGUN_MK2.png", "ammo_type": ".12", "stack_limit": "5"},
+            "SPAS": {"hash": "WEAPON_COMBATSHOTGUN", "name": "Franchi SPAS-12", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_COMBATSHOTGUN.png", "ammo_type": ".12", "stack_limit": "5"},
+            "PEM": {"hash": "WEAPON_EMPLAUNCHER", "name": "PEM Launcher", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_EMPLAUNCHER.png", "ammo_type": "40mm_PEM", "stack_limit": "5"},
+            "RPG": {"hash": "WEAPON_RPG", "name": "RPG-7", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_RPG.png", "ammo_type": "40mm_HE", "stack_limit": "2"},
+            "Railgun": {"hash": "WEAPON_RAILGUN", "name": "Railgun", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_RAILGUN.png", "ammo_type": "40mm_PEM", "stack_limit": "2"},
+            "Stinger": {"hash": "WEAPON_HOMINGLAUNCHER", "name": "FIM-92 Stinger", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_HOMINGLAUNCHER.png", "ammo_type": "70mm_HEGM", "stack_limit": "2"},
+            "MGL": {"hash": "WEAPON_GRENADELAUNCHER", "name": "NUPROL MGL 40mm", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_GRENADELAUNCHER.png", "ammo_type": "40mm_MOSCART", "stack_limit": "2"},
+            "Minigun": {"hash": "WEAPON_MINIGUN", "name": "M134 Minigun", "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_MINIGUN.png", "ammo_type": ".762_NATO", "stack_limit": "1"},
+            "P227": {"hash": "WEAPON_PISTOL", "name": "Sig Sauer P227",  "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_PISTOL.png", "ammo_type": ".45_ACP", "stack_limit": "7"},
+            "Vintage Pistol" : {"hash": "WEAPON_VINTAGEPISTOL", "name": "Pistola Vintage",  "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_VINTAGEPISTOL.png", "ammo_type": "9mm_Luger", "stack_limit": "10"},
             "C4": {
                 "hash": "WEAPON_STICKYBOMB",
                 "name": "C-4 Explosive",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_STICKYBOMB.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_STICKYBOMB.png",
+                "ammo_type": "self",
+                "stack_limit": "10"
                 },
             "Flare": {
                 "hash": "WEAPON_FLARE",
                 "name": "Signal Flare",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_FLARE.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_FLARE.png",
+                "ammo_type": "self",
+                "stack_limit": "10"
             },
             "M67": {
                 "hash": "WEAPON_GRENADE",
                 "name": "M67 Fragmentation Grenade",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_GRENADE.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_GRENADE.png",
+                "ammo_type": "self",
+                "stack_limit": "10"
             },
-            "BZ Gas": {
+            "BZ_Gas": {
                 "hash": "WEAPON_BZGAS",
                 "name": "BZ Gas Grenade",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_BZGAS.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_BZGAS.png",
+                "ammo_type": "self",
+                "stack_limit": "10"
             },
             "Claymore": {
                 "hash": "WEAPON_PROXMINE",
                 "name": "M18A1 Claymore Mine",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_PROXMINE.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_PROXMINE.png",
+                "ammo_type": "self",
+                "stack_limit": "10"
             },
-            "Pipe Bomb": {
+            "Pipe_Bomb": {
                 "hash": "WEAPON_PIPEBOMB",
                 "name": "Improvised Pipe Bomb",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_PIPEBOMB.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_PIPEBOMB.png",
+                "ammo_type": "self",
+                "stack_limit": "10"
             },
-            "CS Gas": {
+            "CS_Gas": {
                 "hash": "WEAPON_TEARGAS",
                 "name": "CS Gas Grenade",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_SMOKEGRENADE.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_SMOKEGRENADE.png",
+                "ammo_type": "self",
+                "stack_limit": "10"
             },
             "Beretta": {
                 "hash": "WEAPON_APPISTOL",
                 "name": "Beretta 93R",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_APPISTOL.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_APPISTOL.png",
+                "ammo_type": "9mm_Luger",
+                "stack_limit": "10"
             },
             "Orion": {
                 "hash": "WEAPON_FLAREGUN",
                 "name": "Orion Flare Gun",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_FLAREGUN.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_FLAREGUN.png",
+                "ammo_type": "12_Gauge",
+                "stack_limit": "10"
             },
             "HK": {
                 "hash": "WEAPON_COMBATPISTOL",
                 "name": "Heckler & Koch P2000",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_COMBATPISTOL.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_COMBATPISTOL.png",
+                "ammo_type": "9mm_Luger",
+                "stack_limit": "10"
             },
-            "Colt Navy": {
+            "Colt_Navy": {
                 "hash": "WEAPON_NAVYREVOLVER",
                 "name": "Colt 1851 Navy Revolver",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_NAVYREVOLVER.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_NAVYREVOLVER.png",
+                "ammo_type": ".44",
+                "stack_limit": "7"
             },
             "Colt": {
                 "hash": "WEAPON_DOUBLEACTION",
                 "name": "Colt M1892",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_DOUBLEACTION.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_DOUBLEACTION.png",
+                "ammo_type": ".38",
+                "stack_limit": "7"
             },
-            "Desert Eagle": {
+            "Desert_Eagle": {
                 "hash": "WEAPON_PISTOL50",
                 "name": "Desert Eagle .50 AE",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_PISTOL50.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_PISTOL50.png",
+                "ammo_type": ".50_AE",
+                "stack_limit": "7"
             },
             "Alien": {
                 "hash": "WEAPON_RAYPISTOL",
                 "name": "Alien Ray Gun",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_RAYPISTOL.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_RAYPISTOL.png",
+                "ammo_type": "40mm_PEM",
+                "stack_limit": "5"
             },
             "CZ": {
                 "hash": "WEAPON_PISTOL_MK2",
                 "name": "CZ P-09 Duty",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_PISTOL_MK2.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_PISTOL_MK2.png",
+                "ammo_type": "9mm_Luger",
+                "stack_limit": "5"
             },
-            "Smith & Wesson": {
+            "Smith_&_Wesson": {
                 "hash": "WEAPON_REVOLVER",
                 "name": "Smith & Wesson Model 29",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_REVOLVER.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_REVOLVER.png",
+                "ammo_type": ".44",
+                "stack_limit": "7"
             },
             "Taurus": {
                 "hash": "WEAPON_REVOLVER_MK2",
                 "name": "Taurus Raging Bull",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_REVOLVER_MK2.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_REVOLVER_MK2.png",
+                "ammo_type": ".44",
+                "stack_limit": "7"
             },
             "Contender": {
                 "hash": "WEAPON_MARKSMANPISTOL",
                 "name": "Thompson/Center Contender G2",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_MARKSMANPISTOL.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_MARKSMANPISTOL.png",
+                "ammo_type": ".22_LR",
+                "stack_limit": "7"
             },
             "MPX": {
                 "hash": "WEAPON_COMBATPDW",
                 "name": "SIG Sauer MPX",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_COMBATPDW.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_COMBATPDW.png",
+                "ammo_type": "9mm_Luger",
+                "stack_limit": "7"
             },
             "Uzi": {
                 "hash": "WEAPON_MICROSMG",
                 "name": "Micro Uzi",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_MICROSMG.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_MICROSMG.png",
+                "ammo_type": "9mm_Luger",
+                "stack_limit": "7"
             },
             "MP5": {
                 "hash": "WEAPON_SMG",
                 "name": "Heckler & Koch MP5A3",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_SMG.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_SMG.png",
+                "ammo_type": "9mm_Luger",
+                "stack_limit": "7"
             },
             "MP5K": {
                 "hash": "WEAPON_SMG_MK2",
                 "name": "Heckler & Koch MP5K",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_SMG_MK2.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_SMG_MK2.png",
+                "ammo_type": "9mm_Luger",
+                "stack_limit": "7"
             },
             "Skorpion": {
                 "hash": "WEAPON_MINISMG",
                 "name": "Škorpion vz. 61",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_MINISMG.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_MINISMG.png",
+                "ammo_type": "9mm_Luger",
+                "stack_limit": "7"
             },
             "TEC-9": {
                 "hash": "WEAPON_MACHINEPISTOL",
                 "name": "Intratec TEC-9",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_MACHINEPISTOL.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_MACHINEPISTOL.png",
+                "ammo_type": "9mm_Luger",
+                "stack_limit": "7"
             },
             "Magpul": {
                 "hash": "WEAPON_ASSAULTSMG",
                 "name": "Magpul PDR",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_ASSAULTSMG.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_ASSAULTSMG.png",
+                "ammo_type": ".556_NATO",
+                "stack_limit": "7"
             },
-            "Pipe Wrench": {
+            "Pipe_Wrench": {
                 "hash": "WEAPON_PIPEWRENCH",
                 "name": "Chave Inglesa",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_WRENCH.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_WRENCH.png",
+                "ammo_type": "self",
+                "stack_limit": "2"
             },
-            "Stone Hatchet": {
+            "Stone_Hatchet": {
                 "hash": "WEAPON_STONE_HATCHET",
                 "name": "Machadinha de Pedra",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_STONE_HATCHET.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_STONE_HATCHET.png",
+                "ammo_type": "self",
+                "stack_limit": "2"
             },
-            "Golf Club": {
+            "Golf_Club": {
                 "hash": "WEAPON_GOLFCLUB",
                 "name": "Taco de Golf",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_GOLFCLUB.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_GOLFCLUB.png",
+                "ammo_type": "self",
+                "stack_limit": "2"
             },
             "Hammer": {
                 "hash": "WEAPON_HAMMER",
                 "name": "Martelo",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_HAMMER.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_HAMMER.png",
+                "ammo_type": "self",
+                "stack_limit": "2"
             },
             "Cassetete": {
                 "hash": "WEAPON_NIGHTSTICK",
                 "name": "Cassetete",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_NIGHTSTICK.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_NIGHTSTICK.png",
+                "ammo_type": "self",
+                "stack_limit": "2"
             },
             "Crowbar": {
                 "hash": "WEAPON_CROWBAR",
                 "name": "Pé de Cabra",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_CROWBAR.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_CROWBAR.png",
+                "ammo_type": "self",
+                "stack_limit": "2"
             },
             "Flashlight": {
                 "hash": "WEAPON_FLASHLIGHT",
                 "name": "Lanterna Tática",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_FLASHLIGHT.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_FLASHLIGHT.png",
+                "ammo_type": "self",
+                "stack_limit": "2"
             },
-            "Cavalry Dagger": {
+            "Cavalry_Dagger": {
                 "hash": "WEAPON_DAGGER",
                 "name": "Adaga de Cavalaria",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_DAGGER.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_DAGGER.png",
+                "ammo_type": "self",
+                "stack_limit": "2"
             },
-            "Baseball Bat": {
+            "Baseball_Bat": {
                 "hash": "WEAPON_BAT",
                 "name": "Taco de Beisebol",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_BAT.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_BAT.png",
+                "ammo_type": "self",
+                "stack_limit": "2"
             },
             "Knife": {
                 "hash": "WEAPON_KNIFE",
                 "name": "Faca",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_KNIFE.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_KNIFE.png",
+                "ammo_type": "self",
+                "stack_limit": "2"
             }
             ,
-            "Battle Axe": {
+            "Battle_Axe": {
                 "hash": "WEAPON_BATTLEAXE",
                 "name": "Machado de Batalha",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_BATTLEAXE.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_BATTLEAXE.png",
+                "ammo_type": "self",
+                "stack_limit": "2"
             },
             "Machete": {
                 "hash": "WEAPON_MACHETE",
                 "name": "Machete",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_MACHETE.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_MACHETE.png",
+                "ammo_type": "self",
+                "stack_limit": "7"
             },
             "Switchblade": {
                 "hash": "WEAPON_SWITCHBLADE",
                 "name": "Canivete",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_SWITCHBLADE.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_SWITCHBLADE.png",
+                "ammo_type": "self",
+                "stack_limit": "2"
             },
-            "Fire Axe": {
+            "Fire_Axe": {
                 "hash": "WEAPON_HATCHET",
                 "name": "Machado Corta-fogo",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_HATCHET.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_HATCHET.png",
+                "ammo_type": "self",
+                "stack_limit": "2"
             },
             "Bottle": {
                 "hash": "WEAPON_BOTTLE",
                 "name": "Garrafa Quebrada",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_BOTTLE.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_BOTTLE.png",
+                "ammo_type": "self",
+                "stack_limit": "7"
             },
             "Taser": {
                 "hash": "WEAPON_STUNGUN",
                 "name": "Taser",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_STUNGUN.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_STUNGUN.png",
+                "ammo_type": "self",
+                "stack_limit": "5"
             },
             "AKM": {
                 "hash": "WEAPON_ASSAULTRIFLE_MK2",
                 "name": "AKM / AK-12",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_ASSAULTRIFLE_MK2.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_ASSAULTRIFLE_MK2.png",
+                "ammo_type": ".545",
+                "stack_limit": "5"
             },
             "AKS": {
                 "hash": "WEAPON_COMPACTRIFLE",
                 "name": "AKS-74U",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_COMPACTRIFLE.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_COMPACTRIFLE.png",
+                "ammo_type": ".545",
+                "stack_limit": "5"
             },
             "FAL": {
                 "hash": "WEAPON_BATTLERIFLE",
                 "name": "Herstal | FN FAL",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_BATTLERIFLE.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_BATTLERIFLE.png",
+                "ammo_type": ".762_NATO",
+                "stack_limit": "5"
             },
             "M4": {
                 "hash": "WEAPON_CARBINERIFLE",
                 "name": "M4 / HK416",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_CARBINERIFLE.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_CARBINERIFLE.png",
+                "ammo_type": ".556_NATO",
+                "stack_limit": "5"
             },
             "G36C": {
                 "hash": "WEAPON_SPECIALCARBINE_MK2",
                 "name": "Heckler & Koch G36C",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_SPECIALCARBINE_MK2.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_SPECIALCARBINE_MK2.png",
+                "ammo_type": ".556_NATO",
+                "stack_limit": "5"
             },
             "AUG": {
                 "hash": "WEAPON_MILITARYRIFLE",
                 "name": "Steyr AUG A3",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_MILITARYRIFLE.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_MILITARYRIFLE.png",
+                "ammo_type": ".556_NATO",
+                "stack_limit": "5"
             },
             "AK": {
                 "hash": "WEAPON_ASSAULTRIFLE",
                 "name": "Kalashnikov AK-47",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_ASSAULTRIFLE.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_ASSAULTRIFLE.png",
+                "ammo_type": ".762_NATO",
+                "stack_limit": "5"
             },
             "G36": {
                 "hash": "WEAPON_SPECIALCARBINE",
-                "name": "Heckler & Koch G36C",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_SPECIALCARBINE.png"
+                "name": "Heckler & Koch G36V",
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_SPECIALCARBINE.png",
+                "ammo_type": ".556_NATO",
+                "stack_limit": "5"
             },
             "SCAR": {
                 "hash": "WEAPON_HEAVYRIFLE",
                 "name": "FN SCAR-H",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_HEAVYRIFLE.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_HEAVYRIFLE.png",
+                "ammo_type": ".762_NATO",
+                "stack_limit": "5"
             },
             "M16": {
                 "hash": "WEAPON_TACTICALRIFLE",
                 "name": "M16A4",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_TACTICALRIFLE.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_TACTICALRIFLE.png",
+                "ammo_type": ".556_NATO",
+                "stack_limit": "5"
             },
             "Thompson": {
                 "hash": "WEAPON_GUSENBERG",
                 "name": "M1928A1 Thompson",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_GUSENBERG.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_GUSENBERG.png",
+                "ammo_type": ".45_ACP",
+                "stack_limit": "5"
             },
             "PKM": {
                 "hash": "WEAPON_MG",
                 "name": "PKM",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_MG.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_MG.png",
+                "ammo_type":".762_NATO",
+                "stack_limit": "5"
             },
             "M249": {
                 "hash": "WEAPON_COMBATMG_MK2",
                 "name": "M249 SAW",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_COMBATMG_MK2.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_COMBATMG_MK2.png",
+                "ammo_type": ".556_NATO",
+                "stack_limit": "5"
             },
-            "Brass Knuckles": {
+            "Brass_Knuckles": {
                 "hash": "WEAPON_KNUCKLE",
                 "name": "Soco Inglês",
-                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_KNUCKLE.png"
+                "webimg": "https://docs-backend.fivem.net/weapons/WEAPON_KNUCKLE.png",
+                "ammo_type": "self",
+                "stack_limit": "2"
     }
         },
+        "Munições": {
+            ".50_BMG": {"name": ".50 BMG", "webimg": "https://i.ibb.co/3yDyMhWr/download.png", "stack_limit": "50"},
+            ".762_NATO": {"name": "7.62mm NATO", "webimg": "https://i.ibb.co/BHCCxRMZ/7-62.png", "stack_limit": "500"},
+            ".12": {"name": "Gáugio 12", "webimg": "https://i.ibb.co/PZDZ91hP/12.png", "stack_limit": "250"},
+            "40mm_PEM": {"name": "40mm EMP", "webimg": "https://i.ibb.co/V08ZP5rp/download.png", "stack_limit": "50"},
+            "40mm_HE": {"name": "40mm HE", "webimg": "https://i.ibb.co/JwN0qjMv/40mm-HE.png", "stack_limit": "50"},
+            "70mm_HEGM": {"name": "70mm HEGM", "webimg": "https://i.ibb.co/KctfRddh/homing.png", "stack_limit": "50"},
+            "40mm_MOSCART": {"name": "40mm MOSCART", "webimg": "https://i.ibb.co/bMZtm107/40mm-MOSCART.png", "stack_limit": "50"},
+            ".45_ACP": {"name": ".45 ACP", "webimg": "https://i.ibb.co/jPxzvDZy/45ACP.png", "stack_limit": "1000"},
+            "9mm_Luger": {"name": "9mm Luger", "webimg": "https://i.ibb.co/4Zd0kYKH/9mm.png", "stack_limit": "1000"},
+            "12_Gauge": {"name": "12 Gauge", "webimg": "https://i.ibb.co/mFYv34dW/flare-ammo.png", "stack_limit": "100"},
+            ".44": {"name": ".44 Magnum", "webimg": "https://i.ibb.co/35JbX1ZJ/44-m.png", "stack_limit": "800"},
+            ".38": {"name": ".38 Long Colt", "webimg": "https://i.ibb.co/d44hn9gD/38-LC.png", "stack_limit": "750"},
+            ".50_AE": {"name": ".50 Action Express", "webimg": "https://i.ibb.co/hxqTGb6y/50AE.png", "stack_limit": "500"},
+            ".22_LR": {"name": ".22 Long Rifle", "webimg": "https://i.ibb.co/nM3K2Q6X/22-Long-Rifle.png", "stack_limit": "1000"},
+            ".556_NATO": {"name": "5.56mm NATO", "webimg": "https://i.ibb.co/HTVNxj9b/556-45.png", "stack_limit": "850"},
+            ".545": {"name": "545x39", "webimg": "https://i.ibb.co/Z6WvgPKj/545-39.png", "stack_limit": "850"}
+        }
+        ,
         "variados": {
-            "Camisinha": {"name" : "Camisinha", "webimg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ZjXCvn6CSkPCxYJoXhMtpOhstMsb-AAI9vHPGFgCfg&s"},
-            "Laço": {"name": "Laço", "webimg": "https://static.vecteezy.com/system/resources/thumbnails/008/848/741/small/watercolor-rope-hand-painted-camping-supplies-png.png"},
-            "Algema": {"name": "Algema", "webimg": "https://images.vexels.com/media/users/3/206623/isolated/preview/8bdc3ec8d4121b415904b5eb3015d0e1-algemas-desenhadas-a-mao.png"},
-            "Mochila": {"name": "Mochila", "webimg": "https://cdn.discordapp.com/attachments/1159973001241055303/1551030184365260861/D_NQ_NP_707461-CBT79532158140_102024-O.png?ex=6ab07cec&is=6aaf2b6c&hm=deb298f04c1e4268eeaedeabd76c479ffaead1422324a1e92412f8274c1726f0&"}
+            "Camisinha": {"name" : "Camisinha", "webimg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ZjXCvn6CSkPCxYJoXhMtpOhstMsb-AAI9vHPGFgCfg&s", "stack_limit": "10"},
+            "Laço": {"name": "Laço", "webimg": "https://static.vecteezy.com/system/resources/thumbnails/008/848/741/small/watercolor-rope-hand-painted-camping-supplies-png.png", "stack_limit": "10"},
+            "Algema": {"name": "Algema", "webimg": "https://images.vexels.com/media/users/3/206623/isolated/preview/8bdc3ec8d4121b415904b5eb3015d0e1-algemas-desenhadas-a-mao.png", "stack_limit": "10"},
+            "Mochila": {"name": "Mochila", "webimg": "https://i.ibb.co/Kjfdyc1w/mochila.png", "stack_limit": "10"}
         }
     } 
 }
